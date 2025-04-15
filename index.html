@@ -4,20 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="./plugins/bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Todo app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
 
+  <div class="todo-container w-100 h-100 position-relative">
+    <div class="content w-100 h-100 d-flex justify-content-center align-items-center position-relative">
+      <img class="position-absolute top-0 w-100" src="./images/bg-desktop-dark.jpg" alt="">
+      <div class="todo">
+        <div class="todo-header pb-4 d-flex justify-content-between align-items-center">
+          <h1 class="text-title text-uppercase">Todo</h1>
+          <img src="./images/icon-sun.svg" class="icon-sun" alt="">
+        </div>
+        <div class="todo-input mb-4 d-flex align-items-center">
+          <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
+          <input type="text" class="w-100 ps-3" placeholder="Create a new todo...">
+        </div>
+        <div class="todo-content">
+          <div class="todo-list pt-4 pb-4">
+            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
+              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
+              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
+              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
+            </div>
+            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
+              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
+              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
+              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
+            </div>
+            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
+              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
+              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
+              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
+            </div>
+            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
+              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
+              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
+              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
+            </div>
+            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
+              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
+              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
+              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
+            </div>
+          </div>
+          <div class="todo-footer d-flex justify-content-between">
+            <div class="items-number">
+              <p><span class="todo-number">3</span> items left</p>
+            </div>
+            <div class="todo-actions">
+              <span class="ms-2 all">All</span>
+              <span class="ms-2">Active</span>
+              <span class="ms-2">Completed</span>
+            </div>
+            <div class="todo-clear">
+              <span>Clear Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="attribution w-100 p-2 position-absolute bottom-0 start-50">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/OssamaArgaz" target="_blank">Argaz Ossama</a>.
+    </div>
+  </div>
 
 
 
@@ -34,8 +93,7 @@
 
 
 
-
-  Todo
+  <!-- Todo
 
   Add dynamic number items left
 
@@ -45,14 +103,11 @@
 
   Clear Completed
 
-  Drag and drop to reorder list
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Drag and drop to reorder list -->
 
 
+
+  <script src="./plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>

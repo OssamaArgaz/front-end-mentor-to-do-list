@@ -22,6 +22,187 @@
     --Light-Grayish-Blue: hsl(234, 39%, 85%);
     --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
     --Dark-Grayish-Blue: hsl(234, 11%, 52%);
-    --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
-    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+    --Very-Dark-Grayish-Blue1: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue2: hsl(237, 14%, 26%);
+    color: hsl(235, 21%, 77%);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Very-Dark-Blue);
+    position: relative;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.todo-container{
+    background-color: var(--Very-Dark-Blue);
+}
+
+.content{
+    padding-bottom: 100px;
+    background-color: var(--Very-Dark-Blue);
+}
+.todo{
+    background-color: transparent;
+    width: 40%;
+    margin: auto;
+    margin-top: 3%;
+    padding: 10px;
+    z-index: 2;
+}
+
+
+
+.todo-header h1{
+    color: var(--Very-Light-Gray);
+}
+
+.todo-header .icon-sun{
+    width: 30px;
+    height: 30px;
+}
+
+.todo-input{
+    padding: 10px 15px;
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.check-span{
+    padding: 8px;
+    border: 1px solid var(--Very-Dark-Grayish-Blue1);
+}
+.check-span-checked{
+    padding: 8px;
+    background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    border: 1px solid var(--Very-Dark-Grayish-Blue1);
+}
+.todo-input input{
+    padding: 5px 10px 5px;
+    font-size: 14px;
+    background-color: transparent;
+    color: var(--Dark-Grayish-Blue);
+}
+.todo-input input::placeholder{
+    color: var(--Dark-Grayish-Blue);
+}
+
+
+
+.todo-content{
+    padding: 5px 15px;
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.todo-list{
+    color: var(--Light-Grayish-Blue);
+    font-size: 14px;
+    /* padding: 5px 15px; */
+    background-color: var(--Very-Dark-Desaturated-Blue);
+}
+.todo-list-item{
+    border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+.remove-icon{
+    opacity: 0;
+    transition: all ease-in-out .2s;
+    -webkit-transition: all ease-in-out .2s;
+    -moz-transition: all ease-in-out .2s;
+    -ms-transition: all ease-in-out .2s;
+    -o-transition: all ease-in-out .2s;
+}
+.remove-icon:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+
+
+.todo-footer{
+    color: var(--Very-Dark-Grayish-Blue1);
+    font-size: 14px;
+    padding: 10px 0;
+    background-color: var(--Very-Dark-Desaturated-Blue);
+}
+.todo-actions span:hover{
+    cursor: pointer;
+    color: var(--Light-Grayish-Blue);
+}
+.todo-clear span:hover{
+    cursor: pointer;
+    color: var(--Light-Grayish-Blue);
+}
+.all{
+    color: var(--Bright-Blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution {
+    color: var(--Light-Grayish-Blue);
+    margin-bottom: -15px;
+    /* background-color: aqua; */
+    font-size: 11px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.attribution a {
+    color: var(--Bright-Blue); 
 }
