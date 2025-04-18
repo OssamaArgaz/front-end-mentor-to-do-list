@@ -24,7 +24,7 @@
     --Dark-Grayish-Blue: hsl(234, 11%, 52%);
     --Very-Dark-Grayish-Blue1: hsl(233, 14%, 35%);
     --Very-Dark-Grayish-Blue2: hsl(237, 14%, 26%);
-    color: hsl(235, 21%, 77%);
+    color: hsl(235, 12%, 42%);
 }
 
 
@@ -35,6 +35,11 @@
 }
 body{
     background-color: var(--Very-Dark-Blue);
+    position: relative;
+}
+body.light{
+    color: var(--Very-Dark-Grayish-Blue1);
+    background-color: var(--Very-Light-Gray);
     position: relative;
 }
 
@@ -65,6 +70,9 @@ a{
     padding-bottom: 100px;
     background-color: var(--Very-Dark-Blue);
 }
+.content-light{
+    color: var(--Very-Dark-Grayish-Blue1);
+    background-color: var(--Very-Light-Gray);}
 .todo{
     background-color: transparent;
     width: 40%;
@@ -80,12 +88,16 @@ a{
     color: var(--Very-Light-Gray);
 }
 
-.todo-header .icon-sun{
+.todo-header .icon-sun, .icon-moon{
     width: 30px;
     height: 30px;
 }
+.todo-header .icon-sun, .icon-moon:hover{
+    cursor: pointer;
+}
 
 .todo-input{
+    font-size: 18px;
     padding: 10px 15px;
     background-color: var(--Very-Dark-Desaturated-Blue);
     border-radius: 5px;
@@ -94,15 +106,39 @@ a{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-
-.check-span{
-    padding: 8px;
+.todo-input-light{
+    color: var(--Very-Dark-Grayish-Blue1);
+    background-color: white;
+}
+.check-span-1{
+    padding: 10px;
     border: 1px solid var(--Very-Dark-Grayish-Blue1);
 }
+.check-span-1:hover{
+    cursor: pointer;
+    border: 1px solid hsl(192, 100%, 67%);
+}
+.check-span{
+    padding: 10px;
+    border: 1px solid var(--Very-Dark-Grayish-Blue1);
+}
+.check-span:hover{
+    cursor: pointer;
+    border: 1px solid hsl(192, 100%, 67%);
+}
+.text-barre{
+    color: var(--Dark-Grayish-Blue);
+    text-decoration: line-through;
+}
+
 .check-span-checked{
     padding: 8px;
     background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     border: 1px solid var(--Very-Dark-Grayish-Blue1);
+}
+.check-span:hover{
+    cursor: pointer;
+    border: 1px solid hsl(192, 100%, 67%);
 }
 .todo-input input{
     padding: 5px 10px 5px;
@@ -125,17 +161,32 @@ a{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+.todo-content-light{
+    color: var(--Very-Dark-Grayish-Blue1);
+    background-color: white;
+}
 
 .todo-list{
+    font-size: 18px;
     color: var(--Light-Grayish-Blue);
     font-size: 14px;
-    /* padding: 5px 15px; */
     background-color: var(--Very-Dark-Desaturated-Blue);
 }
+.todo-list-light{
+    color: var(--Very-Dark-Grayish-Blue1);
+    background-color: white;
+}
 .todo-list-item{
+    font-size: 16px;
     border-bottom: 1px solid var(--Light-Grayish-Blue);
 }
+.todo-list-text {
+    width: 90%;
+}
+
 .remove-icon{
+    /* position: absolute;
+    right: 10px; */
     opacity: 0;
     transition: all ease-in-out .2s;
     -webkit-transition: all ease-in-out .2s;
@@ -143,7 +194,10 @@ a{
     -ms-transition: all ease-in-out .2s;
     -o-transition: all ease-in-out .2s;
 }
-.remove-icon:hover{
+.todo-list-text:hover{
+    cursor: pointer;
+}
+.todo-list-item:hover .remove-icon{
     opacity: 100%;
     cursor: pointer;
 }
@@ -153,8 +207,22 @@ a{
 .todo-footer{
     color: var(--Very-Dark-Grayish-Blue1);
     font-size: 14px;
+    font-weight: 500;
     padding: 10px 0;
     background-color: var(--Very-Dark-Desaturated-Blue);
+}
+.todo-footer-light{
+    color: var(--Very-Dark-Grayish-Blue1);
+    background-color: white;
+}
+.todo-footer-light span{
+    color: var(--Very-Dark-Grayish-Blue1);
+}
+.todo-footer-light span.all{
+    color: var(--Bright-Blue);
+}
+.todo-footer-light span:hover{
+    color: var(--Very-Dark-Grayish-Blue2);
 }
 .todo-actions span:hover{
     cursor: pointer;
@@ -181,20 +249,10 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
 /* Feel free to remove these styles or customise in your own stylesheet 👍 */
 .attribution {
     color: var(--Light-Grayish-Blue);
     margin-bottom: -15px;
-    /* background-color: aqua; */
     font-size: 11px;
     text-align: center;
     transform: translate(-50%, -50%);
@@ -202,6 +260,9 @@ a{
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+}
+.attribution-light{
+    color: var(--Very-Dark-Blue);
 }
 .attribution a {
     color: var(--Bright-Blue); 

@@ -12,57 +12,35 @@
 
 
 </head>
-<body>
+<body class="body">
 
 
   <div class="todo-container w-100 h-100 position-relative">
     <div class="content w-100 h-100 d-flex justify-content-center align-items-center position-relative">
-      <img class="position-absolute top-0 w-100" src="./images/bg-desktop-dark.jpg" alt="">
+      <img class="img-dark position-absolute top-0 w-100" src="./images/bg-desktop-dark.jpg" alt="">
+      <img class="img-light position-absolute top-0 w-100 d-none" src="./images/bg-desktop-light.jpg" alt="">
       <div class="todo">
         <div class="todo-header pb-4 d-flex justify-content-between align-items-center">
           <h1 class="text-title text-uppercase">Todo</h1>
           <img src="./images/icon-sun.svg" class="icon-sun" alt="">
+          <img src="./images/icon-moon.svg" class="icon-moon d-none" alt="">
         </div>
         <div class="todo-input mb-4 d-flex align-items-center">
-          <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
+          <span class="check-span-1 d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img d-none" alt=""></span>
           <input type="text" class="w-100 ps-3" placeholder="Create a new todo...">
         </div>
         <div class="todo-content">
           <div class="todo-list pt-4 pb-4">
-            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
-              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
-              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
-              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
-            </div>
-            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
-              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
-              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
-              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
-            </div>
-            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
-              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
-              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
-              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
-            </div>
-            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
-              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
-              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
-              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
-            </div>
-            <div class="todo-list-item pt-3 pb-3 d-flex align-items-center">
-              <span class="check-span d-flex justify-content-center align-items-center rounded-circle"><img src="./images/icon-check.svg" class="check-img" alt=""></span>
-              <span class="ps-3">Lorem, ipsum dolor sdi itaque odit ducimus, doloremque reiciendis!</span>
-              <img class="remove-icon" src="./images/icon-cross.svg" alt="">
-            </div>
+            
           </div>
           <div class="todo-footer d-flex justify-content-between">
             <div class="items-number">
-              <p><span class="todo-number">3</span> items left</p>
+              <p><span class="todo-number">0</span> items left</p>
             </div>
             <div class="todo-actions">
               <span class="ms-2 all">All</span>
-              <span class="ms-2">Active</span>
-              <span class="ms-2">Completed</span>
+              <span class="ms-2 active">Active</span>
+              <span class="ms-2 completed">Completed</span>
             </div>
             <div class="todo-clear">
               <span>Clear Completed</span>
@@ -89,21 +67,6 @@
 
 
 
-
-
-
-
-  <!-- Todo
-
-  Add dynamic number items left
-
-  All
-  Active 
-  Completed
-
-  Clear Completed
-
-  Drag and drop to reorder list -->
 
 
 
