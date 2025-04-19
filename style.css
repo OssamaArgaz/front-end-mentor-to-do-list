@@ -136,7 +136,7 @@ a{
     background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
     border: 1px solid var(--Very-Dark-Grayish-Blue1);
 }
-.check-span:hover{
+.check-span-checked:hover{
     cursor: pointer;
     border: 1px solid hsl(192, 100%, 67%);
 }
