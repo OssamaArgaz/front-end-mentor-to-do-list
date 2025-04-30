@@ -63,8 +63,8 @@ document.addEventListener("click", (event) => {
         num++;
         document.querySelector('.todo-number').innerHTML = num;
     }
-    console.log(todoArray);
-    console.log(event.target);
+    // console.log(todoArray);
+    // console.log(event.target);
 });
 
 
@@ -129,7 +129,12 @@ document.addEventListener('click', event => {
     if (event.target.closest('.remove-icon')) {
         id = event.target.getAttribute("todo-id")
         todoArray.splice(id, 1);
+        if(!event.target.previousElementSibling.previousElementSibling){
+            num--;
+            document.querySelector('.todo-number').innerHTML = num;
+        }
         view();
+
         // console.log(todoArray);
     }
 })
@@ -235,6 +240,18 @@ clear.addEventListener('click', ()=>{
     }
     todoArray = todoArray.filter(todo => !toRemove.includes(todo))
     view()
-    console.log(todoArray);
-    console.log(toRemove);
+    // console.log(todoArray);
+    // console.log(toRemove);
+})
+
+
+
+// DRAG AND DROP SORTLIST
+
+document.addEventListener('dragstart', item =>{
+    if(item.target.closest('.todo-list-item') || item.target.closest('.todo-list-text')){
+        item.target.classList.add('dragging');
+    }
+    console.log(item.target);
+    
 })
